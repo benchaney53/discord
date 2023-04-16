@@ -1,0 +1,164 @@
+/* General styles */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	color: #fff; /* set text color to white */
+	background-color: #292929; /* set background color to dark gray */
+}
+
+a {
+	text-decoration: none;
+	color: #fff; /* set link color to white */
+}
+
+ul {
+	list-style: none;
+}
+
+/* Header styles */
+header {
+	background-color: #222; /* set header background color to dark */
+	padding: 10px;
+}
+
+nav ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+	nav ul li {
+		margin: 0 10px;
+	}
+
+		nav ul li a {
+			font-size: 1.2rem;
+		}
+
+/* Hero section styles */
+.hero {
+	background-image: url("https://images.unsplash.com/photo-1551234088-9005c7bca09b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Z2FtZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80");
+	background-size: cover;
+	background-position: center;
+	padding: 50px;
+	text-align: center;
+}
+
+	.hero h1 {
+		font-size: 4rem;
+		margin-bottom: 20px;
+		color: #fff;
+		text-shadow: 2px 2px #000;
+	}
+
+	.hero p {
+		font-size: 1.5rem;
+		margin-bottom: 30px;
+		color: #fff;
+	}
+
+.button-wrapper {
+	display: inline-block;
+	margin-top: 30px;
+}
+
+	.button-wrapper a {
+		display: inline-block;
+		background-color: #7289DA;
+		color: #fff;
+		font-size: 1.2rem;
+		padding: 10px 30px;
+		border-radius: 5px;
+		cursor: pointer;
+		transition: background-color 0.3s ease;
+	}
+
+		.button-wrapper a:hover {
+			background-color: #5b6f9f; /* darken button hover color */
+		}
+
+/* About section styles */
+.about {
+	background-color: #444; /* set about section background color to dark */
+	padding: 50px;
+	text-align: center;
+}
+
+	.about h2 {
+		font-size: 2.5rem;
+		margin-bottom: 20px;
+		color: #fff; /* set about section text color to white */
+	}
+
+	.about p {
+		font-size: 1.2rem;
+		line-height: 1.5;
+		margin-bottom: 20px;
+		color: #ddd; /* set about section text color to light gray */
+	}
+
+/* Games section styles */
+.games {
+	background-color: #222; /* set games section background color to dark */
+	padding: 50px;
+	text-align: center;
+}
+
+	.games h2 {
+		font-size: 2.5rem;
+		margin-bottom: 20px;
+		color: #fff; /* set games section text color to white */
+	}
+
+	.games ul {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.games li {
+		background-color: #7289DA;
+		color: #fff;
+		font-size: 1.2rem;
+		margin: 10px;
+		padding: 10px 20px;
+		border-radius: 5px;
+		cursor: pointer;
+		transition: background-color 0.3s ease;
+	}
+
+.games li:hover {
+	background-color: #5b6f9f; /* darken game item hover color */
+}
+
+/* Footer styles /
+footer {
+background-color: #222; / set footer background color to dark /
+color: #fff; / set footer text color to white */
+padding: 10px;
+text-align: center;
+}
+
+footer p {
+	font-size: 1rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+	.hero {
+		padding: 50px 20px;
+	}
+
+	.about {
+		padding: 50px 20px;
+	}
+
+	.games {
+		padding: 50px 20px;
+	}
+}
